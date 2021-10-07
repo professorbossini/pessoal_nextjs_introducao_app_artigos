@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 const ArtigosPage = () => {
     return (
       <>
@@ -5,12 +7,16 @@ const ArtigosPage = () => {
           Artigos
         </h1>
         <ul>
-          <a href="programacao-com-java">
-            <li>Programação com Java</li>
-          </a>
-          <a href="programacao-com-python">
-            <li>Programação com Python</li>
-          </a>
+            <li>
+              <Link href="/artigos/programacao-com-java">
+                Programação com Java
+              </Link>
+            </li>
+            <li>
+              <Link href="/artigos/programacao-com-python">
+                Programação com Python
+              </Link>
+            </li>
         </ul>
       </>
     )
